@@ -1,0 +1,58 @@
+{
+  "name": "webpack-example",
+  "version": "1.0.0",
+  "description": "An example repo for using various webpack configurations",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "echo '📦   Bundling client'",
+    "start": "webpack-dev-server --config=./webpack/dev.babel.js --progress",
+    "build": "webpack --config=./webpack/dev.babel.js --progress",
+    "build:prod": "webpack --config=./webpack/prod.babel.js --progress",
+    "build:prod-analyze": "ANALYZE=true webpack --config=./webpack/prod.babel.js --progress",
+    "start:prod": "webpack-dev-server --config=./webpack/prod.babel.js --progress"
+  },
+  "keywords": [
+    "webpack",
+    "example",
+    "bundling"
+  ],
+  "author": "Param Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-pug": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.0",
+    "path": "^0.12.7",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-fix-default-import-plugin": "^1.0.3",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.3.17",
+    "@types/react-dom": "^16.0.6",
+    "awesome-typescript-loader": "^5.0.0",
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-hot-loader": "^4.3.0",
+    "styled-components": "^3.3.2",
+    "typescript": "^2.9.1",
+    "why-did-you-update": "^0.1.1"
+  }
+}
